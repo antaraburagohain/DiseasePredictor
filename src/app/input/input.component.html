@@ -1,0 +1,61 @@
+<div class="align-center">
+    <mat-form-field appearance="fill">
+        <mat-label>Symptom 1</mat-label>
+        <mat-select [(ngModel)]="symptom1">
+            <mat-option *ngFor="let disease of diseases" [value]="disease" >
+                {{disease}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field  appearance="fill">
+        <mat-label>Symptom 2</mat-label>
+        <mat-select  [(ngModel)]="symptom2">
+            <mat-option *ngFor="let disease of diseases" [value]="disease">
+                {{disease}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field  appearance="fill">
+        <mat-label>Symptom 3</mat-label>
+        <mat-select  [(ngModel)]="symptom3">
+            <mat-option *ngFor="let disease of diseases" [value]="disease">
+                {{disease}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Symptom 4</mat-label>
+        <mat-select [(ngModel)]="symptom4">
+            <mat-option *ngFor="let disease of diseases" [value]="disease" >
+                {{disease}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Symptom 5</mat-label>
+        <mat-select [(ngModel)]="symptom5">
+            <mat-option *ngFor="let disease of diseases" [value]="disease" >
+                {{disease}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    
+    <button mat-raised-button color="primary" (click)="getDiseases()">Get Disease</button>
+    <br>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class='result'>
+        <h1>Predicted disease: {{resultDiseaseDT}}</h1>
+        <!-- {{resultDiseaseDT}} -->
+    </div>
+</div>
